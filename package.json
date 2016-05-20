@@ -1,0 +1,16 @@
+{
+    "name": "ar-drone",
+    "version": "0.1.0",
+    "description": "",
+    "author": "",
+    "main": "src/index.js",
+    "ruff": {
+        "dependencies": {
+            "ruff-mbd-v1": "^2.0.4",
+            "home": "^0.1.1",
+            "ar-drone": "*",
+            "button-gpio": "^1.0.1"
+        },
+        "devDependencies": {}
+    }
+}

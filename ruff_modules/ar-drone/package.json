@@ -1,0 +1,15 @@
+{
+    "name": "ar-drone",
+    "version": "0.1.0",
+    "description": "a driver for ar-drone 2.0",
+    "author": "ccccly",
+    "main": "src/index.js",
+    "ruff": {
+        "dependencies": {
+            "buffy":"*",
+            "simple-debug":"*",
+            "repl":"*"
+        }
+    }
+    
+}
