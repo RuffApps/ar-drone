@@ -1,17 +1,17 @@
 'use strict';
 var drone;
-var button;
-var forward;
-var backward;
-var left;
-var right
-var up;
-var down;
-var clockwise;
-var anticlockwise;
-var takeoff;
-var land;
-var hover;
+
+var forward;//水平面上前进
+var backward;//水平面上后退
+var left;//向左
+var right;//向右
+var up;//上升
+var down;//下降
+var clockwise;//顺时针旋转
+var anticlockwise;//逆时针旋转
+var takeoff;//起飞
+var land;//降落
+var hover;//悬停
 
 $.ready(function (error) {
     if (error) {
@@ -19,6 +19,7 @@ $.ready(function (error) {
         return;
     }
     drone = $('#drone');
+    
     forward = $('#forward-button');
     backward = $('#backward-button');
     left = $('#left-button');
@@ -31,7 +32,7 @@ $.ready(function (error) {
     land = $('#land-button');
     hover = $('#hover-button');
     
-    var client = drone.createClient();
+    var client = drone.createClient();//创建无人机的一个客户端
        
     takeoff.on('push', function () {
         console.log('takeoff');

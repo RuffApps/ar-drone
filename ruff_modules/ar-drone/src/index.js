@@ -1,6 +1,3 @@
-
-
-
 'use strict';
 
 var driver = require('ruff-driver');
