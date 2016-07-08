@@ -147,6 +147,7 @@ Ruff 开发包主要提供了如下命令：
             option ssid “ardrone2” //此处的ardrone2为你的ardrone无人机建立的热点ssid
  
  3. 启动dhcp服务，
+ 
     vi /etc/config/network 
 改成
     config interface 'wwan'
