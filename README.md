@@ -143,18 +143,18 @@ Ruff 开发包主要提供了如下命令：
             option device   radio0  
             option network 'wwan'  
             option mode 'sta'  
-            option encryption 'mixed-psk'  
+            #option encryption 'mixed-psk'  
             option ssid “ardrone2” //此处的ardrone2为你的ardrone无人机建立的热点ssid
  
  3. 启动dhcp服务，
     vi /etc/config/network 
-
 改成
-	
     config interface 'wwan'
             option proto 'dhcp'
+ 4. 关闭cupid-daemon进程
+ 	/etc/init.d/cupid-daemon disable
 
-4. 此时ruff连接上了ardrone2.0的wifi热点
+ 5. 此时ruff连接上了ardrone2.0的wifi热点
         
         
    
